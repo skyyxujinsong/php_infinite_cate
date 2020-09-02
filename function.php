@@ -1,5 +1,6 @@
 <?php
 
+
 function getlist_comment(&$mysqli, $pid = 0, $space = 0)
 {
 	$query = "SELECT * FROM infinite_cate WHERE pid={$pid}";
