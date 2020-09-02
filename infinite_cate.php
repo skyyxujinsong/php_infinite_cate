@@ -12,7 +12,7 @@ if (@$_GET['name']) {
 	$name = @$_GET['name'];
 	$pid = @intval($_GET['id']);
 	if (count(get_all_parent_list($mysqli, $pid)) >= plies) {
-		echo "larger than 3 level";
+		echo "larger than ".plies." level";
 		?>
 		<h1>3 seconds later will location... </h1>
 		<script> window.setInterval("location='<?php echo $_SERVER['SCRIPT_NAME']; ?>'", 3000); </script>
