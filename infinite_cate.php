@@ -11,6 +11,7 @@ $mysqli = new mysqli('localhost', 'root', '', 'books');
 const plies = PHP_INT_MAX;
 
 if (@$_GET['name']) {
+	/* for get or post argus you can make some safe action */
 	$name = @$_GET['name'];
 	$pid = @intval($_GET['id']);
 	if (count(get_all_parent_list($mysqli, $pid)) >= plies) {
